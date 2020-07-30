@@ -1,8 +1,8 @@
 # week4 Memory
 ### What to Do
-1.Submit one of:
-    this version of Filter if feeling less comfortable
-    this version of Filter if feeling more comfortable
+1. Submit one of:
+    -this version of Filter if feeling less comfortable
+    -this version of Filter if feeling more comfortable
 2. Submit Recover
 3. **push a folder with a recognizable name and your source codes to this repo**
 
