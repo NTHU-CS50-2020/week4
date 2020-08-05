@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
         //&位元(一個0b1110????一個0b11110000比較0b11100000)運算 
         if ((buffer[3] & 0xf0) == 0xe0&&buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff )
         {
-            printf("**\n");
+            printf("**\n");//📌進不來
             if(JPEG_has_found)
             {
                 fclose(out);
