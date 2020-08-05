@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     //有沒有在家
     if (!file) return 2;
     
-    //📌digital cameras often initialize cards with a FAT file system whose “block size” is 512 bytes (B). 
+    //📌裡面是甚麼digital cameras often initialize cards with a FAT file system whose “block size” is 512 bytes (B). 
     //each block is 512 bytes🧊🧊🧊🧊🧊
     unsigned char buffer[512];//unsigned char 0~255
    
