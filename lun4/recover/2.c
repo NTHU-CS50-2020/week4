@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
     //有沒有在家
     if (!file) return 2;
     
-    //📌裡面是甚麼digital cameras often initialize cards with a FAT file system whose “block size” is 512 bytes (B). 
+    //📌digital cameras often initialize cards with a FAT file system whose “block size” is 512 bytes (B). 
     //each block is 512 bytes🧊🧊🧊🧊🧊
     unsigned char buffer[512];//unsigned char 0~255
    
@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
         //&位元(一個0b1110????一個0b11110000比較0b11100000)運算 
         if ((buffer[3] & 0xf0) == 0xe0&&buffer[0] == 0xff && buffer[1] == 0xd8 && buffer[2] == 0xff )
         {
-            printf("**\n");//📌進不來
+            printf("**\n");
             if(JPEG_has_found)
             {
                 fclose(out);
@@ -52,12 +52,11 @@ int main(int argc, char *argv[])
             printf("**\n");
             fwrite(buffer, 512, 1, out);
         }
-        
-        printf("***\n");
-        //Close any remaining file    
-        fclose(file);
-        fclose(out);
-        return 0;
-        
     }
+            
+    printf("***\n");
+    //Close any remaining file    
+    fclose(file);
+    fclose(out);
+    return 0;
 }
